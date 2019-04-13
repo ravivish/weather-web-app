@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Weather</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/weather.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/styles.css">
+    
+</head>
+<body>
+    <div class="main-content">
+
+        {{>header}}
+        {{!-- <p>My name is : {{name}}</p> --}} 
+        <p>Use this site to get your weather</p>
+        <form>
+            <input placeholder="Location">
+            <button>Search</button>
+        </form>
+
+        <p id='message-1'></p>
+        <p id='message-2'></p>
+
+    </div>
+
+    {{>footer}}
+
+    {{!-- Here i am adding javascript reference after footer not in header because this javascript file needs 
+    the data of "form" tag And if we put this in header we will not be able to get the data from textbox --}}
+    <script src="/js/main.js"></script>
+
+</body>
+</html>

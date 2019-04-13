@@ -1,0 +1,56 @@
+body{
+    color: #333333;
+    font-family: Arial;
+    max-width: 650px;
+    margin:0 auto;
+    padding: 0 20px;
+
+    display: flex;/*using this flexbox for stick the footer at the bootom of the page forever*/
+    flex-direction: column;/*row means the content will be displayed from left to right and column means from up to down*/
+    min-height: 100vh;/*vh=viewport height*/
+}
+
+
+.main-content{
+    flex-grow: 1;/*take the entire the entire space of current div tag*/
+}
+
+footer{
+    color: #888888;
+    border-top: 5px solid #eeeeee;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+header{
+    margin-top: 20px;
+    margin-bottom: 48px;
+}
+
+h1{
+    font-size: 50px;
+    margin-bottom: 16px;
+}
+
+header a {
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;/*by default value is underline*/
+}
+
+.portrait { /* this style is used for select class of image*/
+    width: 250px;
+}
+
+input{
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+button{
+    border: 1px solid #888888;
+    padding: 8px;
+    color: white;
+    cursor: pointer;
+    background: #888888;
+}
