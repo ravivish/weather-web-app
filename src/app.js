@@ -12,6 +12,8 @@ const forecast = require('./utils/forcast')
 
 const app = express()
 
+const port = process.env.PORT || 3000 // to get the port from any production server
+
 //Define path for express config
 const publicDirectoryPath = path.join(__dirname,'../public')
 const viewPath = path.join(__dirname,'../templates/views')
@@ -143,6 +145,6 @@ app.get('*',(req,res) => {
 // app.com/help //this is called routes
 // app/com/about
 
-app.listen(3000, () => {
-    console.log('Server is running on port 3000')
+app.listen(port, () => {
+    console.log('Server is running on port '+port)
 })
